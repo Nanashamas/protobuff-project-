@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+message PaymentRequest {
+    string sender_id = 1;         // ID of the sender
+    string receiver_id = 2;      // ID of the receiver
+    double amount = 3;           // Payment amount
+    string currency = 4;         // Payment currency (e.g., USD, EUR)
+    string description = 5;      // Payment description
+    string timestamp = 6;        // Timestamp of the request
+}
